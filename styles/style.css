@@ -1,5 +1,135 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared styles */
+.font-yeseva-one {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.display-flex {
+  display: flex;
+}
+/* Hero section */
+.hero {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 60px;
+}
+.image-container {
+  width: 426px;
+  height: 600px;
+}
+.hero-person {
+  width: 100%;
+}
+.hero-title-container {
+  /* border-left: 4px solid #ff4d4d; */
+  gap: 13px;
+  align-items: center;
+}
+.hero-title-container > hr {
+  background-color: #ff4d4d;
+  width: 4px;
+  height: 124px;
+  border-radius: 5px;
+  border: none;
+}
+.hero-title {
+  font-size: 3.78rem;
+  line-height: 5rem;
+  color: #333333;
+}
+.hero-sub-title {
+  color: #ffad5a;
+}
+.hero-info {
+  color: #3e3e3e;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.hero-button {
+  padding: 12px 17px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff5959;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.scroll-text-hero {
+  color: #434343;
+  margin-top: 35px;
+}
+/* mission section styels */
+.mission-section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 4.4rem;
+  color: #13103a;
+  margin-bottom: 48px;
+}
+.missions{
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.mission-card{
+  padding: 25px 32px 45px;
+  width: 360px;
+  height: 376px;
+  border-radius: 26px;
+  flex-shrink: 0;
+}
+.missions>:nth-child(1){
+  background-color: #EDF5F6;
+}
+.missions>:nth-child(2){
+  background-color: #FFEEEE;
+}
+.missions>:nth-child(3){
+  background-color: #FFF4D6;
+}
+.mission-icon {
+  width: 141px;
+  height: 141px;
+  margin-bottom: 12px;
+}
+.mission-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+}
+.mission-card>.hero-info{
+  color: #424242;
+}
+
+
+
+
+
+/* Responsive design start from here */
+@media screen and (max-width:576px) {
+  
+  .missions,
+  .hero{
+    flex-direction: column;
+  }
+  .hero{
+    padding: 10px;
+  }
+
 }
