@@ -82,27 +82,27 @@
   color: #13103a;
   margin-bottom: 48px;
 }
-.missions{
+.missions {
   gap: 24px;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
 }
-.mission-card{
+.mission-card {
   padding: 25px 32px 45px;
   width: 360px;
   height: 376px;
   border-radius: 26px;
   flex-shrink: 0;
 }
-.missions>:nth-child(1){
-  background-color: #EDF5F6;
+.missions > :nth-child(1) {
+  background-color: #edf5f6;
 }
-.missions>:nth-child(2){
-  background-color: #FFEEEE;
+.missions > :nth-child(2) {
+  background-color: #ffeeee;
 }
-.missions>:nth-child(3){
-  background-color: #FFF4D6;
+.missions > :nth-child(3) {
+  background-color: #fff4d6;
 }
 .mission-icon {
   width: 141px;
@@ -114,108 +114,202 @@
   font-weight: 600;
   color: #000000;
 }
-.mission-card>.hero-info{
+.mission-card > .hero-info {
   color: #424242;
 }
 
-
 /* limit section styles */
-.limit-section{
+.limit-section {
   gap: 72px;
   align-items: center;
   justify-content: center;
   padding: 0 150px 0 100px;
   position: relative;
 }
-.limit-section-left{
+.limit-section-left {
   position: relative;
 }
-.limit-half-circle{
+.limit-half-circle {
   width: 227px;
   height: 227px;
   position: absolute;
-  z-index:-111;
+  z-index: -111;
   top: 54px;
   left: -94px;
 }
-.limit-section-img{
+.limit-section-img {
   height: 400px;
   width: 400px;
 }
-.limit-sec-title{
+.limit-sec-title {
   font-size: 2.28rem;
   font-weight: 700;
   color: #333333;
 }
-.limit-info{
+.limit-info {
   font-size: 1.1rem;
 }
 /* Community section styles */
-.community-section{
+.community-section {
   margin-top: 150px;
   flex-direction: row-reverse;
   margin-bottom: 85px;
 }
-.community-section .limit-half-circle{
+.community-section .limit-half-circle {
   bottom: -75px;
   right: -95px;
   top: auto;
   left: auto;
 }
 
-
+/* App section styles */
+.corona-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.corona-container {
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  padding: 80px 150px;
+}
+.corona-section-right {
+  width: 525px;
+}
+.corona-section-left {
+  width: 340px;
+  position: relative;
+}
+.corona-section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 131%;
+  color: #000000;
+}
+#corona-sec-sub-title {
+  color: #ffad5a;
+}
+.corona-section-img {
+  width: 230px;
+  height: 470px;
+  border-radius: 16px;
+}
+.corona-shape{
+  position: absolute;
+  z-index: -111;
+}
+.shape-1 {
+  width: 147px;
+  height: 147px;
+  top: -40px;
+  left: -50px;
+}
+.shape-2{
+  height: 77px;
+  width: 77px;
+  bottom: 92px;
+  left: 165px;
+}
+.shape-3{
+  height: 77px;
+  width: 77px;
+  bottom: -10px;
+  left: -20px;
+}
+/* Footer styles */
+footer{
+  height: 200px;
+  background-color: #0b0d17;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-title{
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+.footer-sub-title{
+  color: #ff5959;
+}
+.footer-info{
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight:lighter;
+}
 
 
 
 
 
 /* Responsive design start from here */
-@media screen and (max-width:768px) {
-  
+@media screen and (max-width: 768px) {
   .missions,
   .hero,
-  .limit-section{
+  .limit-section,
+  .corona-container {
     flex-direction: column;
   }
   .hero,
-  .limit-section{
+  .limit-section {
     padding: 5px;
   }
   .image-container {
     width: 350px;
   }
-  .limit-half-circle{
+  .limit-half-circle {
     display: none;
   }
-  .limit-section-img{
+  .limit-section-img {
     height: 350px;
     width: 350px;
   }
-  .limit-section{
+  .limit-section {
     gap: 15px;
-    text-align: center;
+    /* text-align: center; */
   }
-
+  .corona-container {
+    gap: 50px;
+    padding: 20px 10px;
+    /* text-align: center; */
+  }
+  .corona-shape{
+    display: none;
+  }
+  .corona-section-right,
+  .limit-section-right{
+    width: 100%;
+  }
+  .corona-section-left,
+  .limit-section-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-@media screen and (min-width:768px) and (max-width:1024px) {
-  .missions{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .missions {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     row-gap: 50px;
   }
-  .missions>:last-child{
+  .missions > :last-child {
     grid-column: span 2;
     justify-self: center;
   }
-  .hero{
+  .hero {
     padding: 15px;
   }
-  .limit-section{
+  .limit-section {
     padding: 0 10px 0 110px;
     gap: 35px;
   }
-  .community-section{
+  .community-section {
     padding: 0 100px 0 10px;
+  }
+  .corona-container{
+    padding: 80px 5px 80px 70px;
   }
 }
